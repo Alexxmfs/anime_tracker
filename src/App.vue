@@ -67,7 +67,7 @@ onMounted(() => {
         v-model="query"
         @input="handleInput"
       />
-      <button type="submit">Search</button>
+      <button type="submit" class="button">Search</button>
     </form>
 
     <div class="results" v-if="search_results.length > 0">
@@ -112,30 +112,61 @@ onMounted(() => {
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
-    box-shadow: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    background-color: #EEE;
+  background-color: #eee;
 }
 
 main {
-    margin: 0 auto;
-    max-width: 768px;
-    padding: 1.5rem;
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 1.5rem;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 form {
-    display: flex;
-    max-width: 480px;
-    margin: 0 auto 1.5rem;
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto 1.5rem;
+}
+
+form input {
+  appearance: none;
+  outline: none;
+  border: none;
+  background-color: white;
+
+  display: block;
+  color: #888;
+  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.button {
+  appearance: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+
+  display: block;
+  padding: 0.5rem 1rem;
+  background-image: linear-gradient(to right, deeppink 50%, darkviolet 50%);
+  background-size: 200%;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
 }
 </style>
