@@ -98,11 +98,12 @@ onMounted(() => {
         </span>
         <button
           v-if="anime.total_episodes !== anime.watched_episodes"
+          class="button"
           @click="increaseWatch(anime)"
         >
           +
         </button>
-        <button v-if="anime.watched_episodes > 0" @click="decreaseWatch(anime)">
+        <button v-if="anime.watched_episodes > 0" class="button" @click="decreaseWatch(anime)" >
           -
         </button>
       </div>
@@ -167,6 +168,28 @@ form input {
   font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.button:hover {
+  background-position: right;
+}
+
+.results {
+  background-color: #FFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 480px;
+  overflow: scroll;
+  margin-bottom: 1.5rem;
+}
+
+.result {
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
   transition: 0.4s;
 }
 </style>
