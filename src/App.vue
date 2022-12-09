@@ -75,9 +75,13 @@ onMounted(() => {
         <img :src="anime.images.jpg.image_url" />
         <div class="details">
           <h3>{{ anime.title }}</h3>
-          <p :title="anime.synopsis" v-if="anime.synopsis">{{ anime.synopsis.slice(0, 120) }}...</p>
+          <p :title="anime.synopsis" v-if="anime.synopsis">
+            {{ anime.synopsis.slice(0, 120) }}...
+          </p>
           <span class="flex-1"></span>
-          <button @click="addAnime(anime)" class="button">Add to my anime</button>
+          <button @click="addAnime(anime)" class="button">
+            Add to my anime
+          </button>
         </div>
       </div>
     </div>
@@ -93,14 +97,45 @@ onMounted(() => {
           {{ anime.watched_episodes }} / {{ anime.total_episodes }}
         </span>
         <button
-            v-if="anime.total_episodes !== anime.watched_episodes"
-            @click="increaseWatch(anime)">+</button>
-        <button
-            v-if="anime.watched_episodes > 0"
-            @click="decreaseWatch(anime)">-</button>
+          v-if="anime.total_episodes !== anime.watched_episodes"
+          @click="increaseWatch(anime)"
+        >
+          +
+        </button>
+        <button v-if="anime.watched_episodes > 0" @click="decreaseWatch(anime)">
+          -
+        </button>
       </div>
     </div>
   </main>
 </template>
 
-<style></style>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #EEE;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    max-width: 480px;
+    margin: 0 auto 1.5rem;
+}
+</style>
