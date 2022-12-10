@@ -58,16 +58,17 @@ onMounted(() => {
 
 <template>
   <main>
-    <h1>My Anime Tracker</h1>
+    <h1 class="titleAnime">My Anime Tracker</h1>
 
     <form @submit.prevent="searchAnime">
       <input
         type="text"
+        class="inputSearch"
         placeholder="Search for an anime..."
         v-model="query"
         @input="handleInput"
       />
-      <button type="submit" class="button">Search</button>
+      <button type="submit" class="button">Buscar</button>
     </form>
 
     <div class="results" v-if="search_results.length > 0">
@@ -169,6 +170,7 @@ form input {
   font-weight: 700;
   text-transform: uppercase;
   transition: 0.4s;
+  border-radius: 0.8rem;
 }
 
 .button:hover {
@@ -265,5 +267,14 @@ form input {
 
 .anime .button:last-of-type {
   margin-right: 0;
+}
+
+.inputSearch {
+  border-radius: 0.5rem;
+  margin-right: -0.9rem;
+}
+
+.titleAnime {
+  color: #FFF;
 }
 </style>
