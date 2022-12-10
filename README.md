@@ -9,6 +9,27 @@
 
   <img src="https://raw.githubusercontent.com/Alexxmfs/anime_tracker/master/listaAnime.PNG" />
   <img src="https://raw.githubusercontent.com/Alexxmfs/anime_tracker/master/search_anime.PNG" />
+  
+  **Baixe a última versão**
+```
+git clone https://github.com/Alexxmfs/anime_tracker.git
+```
+
+**Mudar para o diretório do projeto**
+```
+cd anime_tracker
+```
+
+**Instalação de dependências**
+```
+npm install
+```
+
+**Exexutar Anime Tracker**
+```
+npm run dev
+```
+  
 # Vue 3 + Vite
 
 This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
