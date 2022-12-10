@@ -1,7 +1,7 @@
 
 <h1>Anime Tracker</h1>
 
-
+![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=%3CCOLOR%3E)
 
 # Vue 3 + Vite
 
