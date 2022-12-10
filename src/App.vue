@@ -116,11 +116,11 @@ onMounted(() => {
   margin: 0;
   padding: 0;
   box-shadow: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Fira sans", sans-serif;
 }
 
 body {
-  background-color: #eee;
+  background-color: #333131;
 }
 
 main {
@@ -162,7 +162,7 @@ form input {
 
   display: block;
   padding: 0.5rem 1rem;
-  background-image: linear-gradient(to right, deeppink 50%, darkviolet 50%);
+  background-image: linear-gradient(to right, #4295f5 50%, #8546f2 50%);
   background-size: 200%;
   color: #fff;
   font-size: 1.125rem;
@@ -191,5 +191,79 @@ form input {
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   transition: 0.4s;
+}
+
+.result img {
+  width: 100px;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+.details {
+  flex: 1 1 0%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.details h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.details p {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.details .button {
+  margin-left: auto;
+}
+
+.myanime h2 {
+  color: #888;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.myanime .anime {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background-color: #FFF;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.anime img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+.aniem h3 {
+  color: #888;
+  font-size: 1.125rem;
+}
+
+.anime .episodes {
+  margin-right: 1rem;
+  color: #888;
+}
+
+.anime .button:first-of-type {
+  margin-right: 1rem;
+}
+
+.anime .button:last-of-type {
+  margin-right: 0;
 }
 </style>
