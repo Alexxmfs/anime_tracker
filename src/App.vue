@@ -68,7 +68,7 @@ onMounted(() => {
         v-model="query"
         @input="handleInput"
       />
-      <button type="submit" class="button">Buscar</button>
+      <button type="submit" class="button">Search</button>
     </form>
 
     <div class="results" v-if="search_results.length > 0">
